@@ -26,7 +26,7 @@ public class FlipKart {
 		driver.get("https://www.flipkart.com/");
 		
 		driver.findElement(By.xpath("//input[@class='_2zrpKA']")).sendKeys("7065159668");
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Buddy$tar29");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("***************");
 		///driver.findElement(By.xpath("//input[@class='_2AkmmA _1LctnI _7UHT_c']")).click();
 		
 		driver.findElement(By.xpath("html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button")).click();
