@@ -45,12 +45,14 @@ Set<String> windows= driver.getWindowHandles();
 		
 		Iterator it = windows.iterator();
 		
-		String firstWindow = (String) it.next();
-		String secondWindow = (String) it.next();
+		String firstWindow =  it.next();
+		System.out.println(firstWindow);
+		String secondWindow =  it.next();
+		System.out.println(secondWindow);
 		
 	
 		driver.switchTo().window(secondWindow);
-		driver.findElement(By.xpath(".//*[@id='container']/div/div[1]/div/div/div/div[1]/div/div[1]/div[2]/ul/li[1]/button")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'_2AkmmA _2Npkh4 _2MWPVK')]")).click();
 		
 		System.out.println("Prodcut sucesfully added into cart");
 		System.out.println("Product name "+ "["+driver.findElement(By.xpath(".//*[@id='container']/div/div[1]/div/div/div[1]/div[2]/div/div[1]/div[1]/div[1]/a")).getText()+"]");
